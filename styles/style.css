@@ -128,6 +128,38 @@ a {
     z-index: 2;
     transition: all .2s ease;
 }
+.menu li a:focus {
+	outline: none !important;
+	font-weight: bold !important;
+	color: #090909;
+	text-decoration: none !important; 
+}
+.menu li a:focus:before {
+		left: -65px;
+		opacity: 1;
+		transition: all .2s ease; 
+}
+.menu li a:active {
+	outline: none !important;
+	font-weight: bold !important;
+	color: #090909;
+	text-decoration: none !important; 
+}
+.menu li a:active:before {
+	left: -65px;
+	opacity: 1;
+	transition: all .2s ease; 
+}
+.menu li a:hover {
+	font-weight: bold !important;
+	color: #090909;
+	text-decoration: none !important; 
+}
+.menu li a:hover:before {
+	left: -65px;
+	opacity: 1;
+	transition: all .2s ease; 
+}
 .menu li .login {
     letter-spacing: 0.02em;
     font-feature-settings: 'pnum' on, 'lnum' on;
@@ -286,6 +318,19 @@ a {
     z-index: 1;
     border: 1px solid #282828;
 }
+.submit-button:hover {
+	font-weight: 500 !important;
+	transition: all .15s ease-in-out; 
+}
+.submit-button:hover:after {
+	top: -1px;
+	left: -1px;
+	transition: all .15s ease-in-out; 
+}
+.submit-button:focus {
+	box-shadow: 0 0 0 0.2rem rgba(40, 40, 40, 0.2) !important; 
+}
+
 /*404 page*/
 
 .error-block {
@@ -325,8 +370,36 @@ a {
     margin-bottom: 50px;
 }
 
-/*Dance page*/
+/*Catalog page*/
 
+.menu-catalog {
+	padding-left: 0;
+}
+.menu-catalog li a {
+	font-family: 'Cormorant';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 120%;
+	color: #090909;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	align-items: center;
+	text-decoration: none;
+	background-color: transparent;
+	margin-bottom: 10px;
+}
+.footer-sidebar__catalog a {
+	font-family: Cormorant;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 120%;
+	font-feature-settings: 'pnum' on, 'lnum' on;
+	color: #090909;
+}
 .main-catalog {
     background: url(../img/bg.jpg) repeat-y left top !important;
     background-size: cover !important;
@@ -370,7 +443,7 @@ a {
 .catalog-header {
     display: flex;
     align-items: stretch;
-    padding: 0 0 80px;
+    padding: 0 0 40px;
 }
 .catalog-header__left {
     width: 38%;
@@ -658,7 +731,7 @@ a {
 .dropdown-menu {
     position: absolute;
     top: 100%;
-    left: 0;
+    right: 0;
     z-index: 1;
     display: none;
     float: right;
@@ -686,6 +759,59 @@ a {
     list-style: none;
     font-size: 1rem;
 }
+/*Dropdown-left*/
+
+.dropdown {
+	display: flex;
+}
+.dropdown ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	top:45px;
+	right:0px;
+	width: 200px;
+	background-color: white;
+	font-weight:bold;
+	position: absolute;
+	display: none;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+.dropdown li a {
+	color: #000;
+	text-decoration: none;
+}
+.dropdown li {
+	padding: 8px 16px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.dropdown li:last-child {
+	border-bottom: none;
+}
+.dropdown li:hover {
+	background-color: #e5e5e5;
+	color: white;
+}
+.dropdown .button {
+	width:178px;
+	height:20px;
+	background-color:#ff3232 ;
+	padding:12px;
+	border-radius:5px;
+	font-weight:bold;
+	color:white;
+}
+.dropdown .button:before {
+	content:"";
+	position:absolute;
+	width:0px;
+	height:0px;
+	border: 10px solid;
+	border-color: white transparent transparent transparent;
+	right:6px;
+	top:18px;
+}
 
 /*Checbox*/
 
@@ -698,6 +824,16 @@ a {
     display: block;
     min-height: 1.5rem;
     padding-left: 1rem !important;
+}
+.checkbox label {
+	font-family: 'Gill Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0.03em;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #282828;
 }
 
 /*Pagination*/
@@ -735,4 +871,116 @@ a {
     line-height: 140%;
     color: #B0ACA8;
     margin-right: 15px;
+}
+
+/*not-lessons*/
+
+.not-lessons-block {
+	position: absolute;
+	top: 0;
+	left: 410px;
+	width: auto;
+	height: 100%;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	z-index: 1;
+}
+.not-lessons-block h2 {
+	font-family: 'Cormorant';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 72px;
+	line-height: 70px;
+	display: flex;
+	align-items: center;
+	font-feature-settings: 'tnum' on, 'lnum' on;
+	color: #090909;
+	margin-bottom: 25px;
+}
+.not-lessons-block p {
+	font-family: Cormorant;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 28px;
+	line-height: 120%;
+	display: flex;
+	align-items: center;
+	font-feature-settings: 'pnum' on, 'lnum' on;
+	color: #090909;
+	margin-bottom: 50px;
+}
+
+/*not-lessons*/
+
+.catalog-header__lesson {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 0 25px;
+	width: 100%;
+}
+.catalog-nav {
+	display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+	border-bottom: 1px solid rgba(40, 40, 40, 0.5);
+	margin-bottom: 10px;
+}
+.catalog-nav a {
+	font-family: 'Gill Sans';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 22px;
+	line-height: 120%;
+	letter-spacing: 0.03em;
+	display: flex;
+	align-items: center;
+	color: #282828;
+	margin-bottom: 5px;
+}
+.nav-footer {
+	display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/*final-certification */
+
+.final-block {
+	position: absolute;
+	width: 600px;
+	height: 100%;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	z-index: 1;
+}
+.final-block h3 {
+	font-family: Cormorant;
+ 	font-style: normal;
+	font-weight: bold;
+	font-size: 52px;
+	line-height: 63px;
+	font-feature-settings: 'tnum' on, 'lnum' on;
+	color: #000000;
+}
+.final-img {
+	position: relative;
+	width: calc(100% + 100px) !important;
+	height: calc(100% + 100px) !important;
+	margin-top: -50px;
+	margin-left: -50px;
+	overflow: hidden;
+}
+.final-img .final-girl {
+	max-height: calc(100% - 100px) !important;
+	max-width: calc(100% - 100px) !important;
+	right: 20px;
+	bottom: 30px;
+	position: absolute;
+	vertical-align: middle;
+	border-style: none;
 }
