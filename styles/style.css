@@ -237,7 +237,7 @@ a {
 }
 .login-form {
     width: 360px;
-    padding-right: 120px;
+		padding-right: 120px;
 }
 .form-link {
 	text-align: right;
@@ -330,7 +330,19 @@ a {
 .submit-button:focus {
 	box-shadow: 0 0 0 0.2rem rgba(40, 40, 40, 0.2) !important; 
 }
-
+.btn-login {
+	margin-top: 50px;
+	margin-bottom: 5px;
+}
+.btn-240 {
+	width: 240px;
+}
+.btn-240_center {
+	width: 240px;
+}
+.btn-350 {
+	width: 350px;
+}
 /*404 page*/
 
 .error-block {
@@ -391,6 +403,49 @@ a {
 	background-color: transparent;
 	margin-bottom: 10px;
 }
+.menu-catalog li a:before {
+	content: '';
+	width: 55px;
+	height: 1px;
+	position: absolute;
+	left: -120px;
+	opacity: 0;
+	background: #282828;
+	z-index: 2;
+	transition: all .2s ease;
+}
+.menu-catalog li a:focus {
+	outline: none !important;
+	font-weight: bold !important;
+	color: #090909;
+	text-decoration: none !important; 
+}
+.menu-catalog li a:focus:before {
+		left: -65px;
+		opacity: 1;
+		transition: all .2s ease; 
+}
+..menu-catalog li a:active {
+	outline: none !important;
+	font-weight: bold !important;
+	color: #090909;
+	text-decoration: none !important; 
+}
+.menu-catalog li a:active:before {
+	left: -65px;
+	opacity: 1;
+	transition: all .2s ease; 
+}
+.menu-catalog li a:hover {
+	font-weight: bold !important;
+	color: #090909;
+	text-decoration: none !important; 
+}
+.menu-catalog li a:hover:before {
+	left: -65px;
+	opacity: 1;
+	transition: all .2s ease; 
+}
 .footer-sidebar__catalog a {
 	font-family: Cormorant;
 	font-style: normal;
@@ -430,6 +485,15 @@ a {
 	align-items: center;
 	color: #282828;
 }
+.main-catalog span {
+	font-family: 'Cormorant Infant', serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 52px;
+  line-height: 63px;
+  color: #090909;
+  margin-right: 70px;
+}
 .catalog-block {
     position: relative;
     top: 0;
@@ -456,7 +520,6 @@ a {
     justify-content: flex-start;
 }
 .catalog-title {
-    margin-bottom: 35px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -503,6 +566,15 @@ a {
     margin-bottom: 65px;
     position: relative;
 }
+.catalog-video h3 {
+	font-family: Cormorant;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 110%;
+	font-feature-settings: 'pnum' on, 'lnum' on;
+	color: #090909;
+}
 .catalog-info {
 	padding: 0 125px;
 	margin: 0 0 35px;
@@ -529,6 +601,16 @@ a {
 .catalog-video__text {
     width: 70%;
     margin: 0 0 40px;
+}
+.catalog-video__text h3 {
+	font-family: Cormorant;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 110%;
+	font-feature-settings: 'pnum' on, 'lnum' on;
+	color: #000000;
+
 }
 .line {
     width: 100%;
@@ -669,6 +751,11 @@ a {
     width: 100%;
     border-top: 1px solid rgba(40, 40, 40, 0.5);
     margin: 65px 0 0;
+}
+.catalog-buy {
+	display: flex;
+  align-items: center;
+	justify-content: center
 }
 .copyright {
     display: flex;
