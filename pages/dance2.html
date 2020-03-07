@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Dance</title>
     <link href="https://fonts.googleapis.com/css?family=Cormorant:300,400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../styles/style.css">
 </head>
@@ -16,6 +16,85 @@
 				</a>
 			</div>
 			<div class="nav-menu">
+				<!-- Кнопка для мобильной навигации -->
+				<div id="menu-togle" class="menu-icon">
+					<div class="menu-icon-line"></div>
+				</div>
+				<!-- Мобильная навигация -->
+				<div id="mobile-nav" class="mobile-nav">
+					<div class="mobile-logo-block">
+						<a class="mobile-logo" href="../main.html">
+							<img src="../img/mob_logo.png">
+						</a>
+					</div>
+					<ul class="mobile-nav__list">
+						<li class="mobile-nav__item"><a href="login.html" class="mobile-nav__link">Вход / Регистрация</a></li>
+						<li class="mobile-nav__item"><a href="dance.html" class="mobile-nav__link">Танцы</a>
+							<div class="menu-filter-block">
+								<div class="menu-filter-block__item">
+									<p>Уровень</p>
+									<div class="checkbox">
+										<input class="checkbox-input" type="checkbox" name="level" id="inlineCheckbox1" value="Нулевой">
+										<label class="checkbox-label" for="inlineCheckbox1">Нулевой</label>
+									</div>
+									<div class="checkbox">
+										<input class="checkbox-input" type="checkbox" name="level" id="inlineCheckbox2" value="Начинающий">
+										<label class="checkbox-label" for="inlineCheckbox2">Начинающий</label>
+									</div>
+									<div class="checkbox">
+										<input class="checkbox-input" type="checkbox" name="level" id="inlineCheckbox3" value="Продолжающий">
+										<label class="checkbox-label" for="inlineCheckbox3">Продолжающий</label>
+									</div>
+									<div class="checkbox">
+										<input class="checkbox-input" type="checkbox" name="level" id="inlineCheckbox4" value="Профи">
+										<label class="checkbox-label" for="inlineCheckbox4">Профи</label>
+									</div>
+								</div>
+								<div class="menu-filter-block__item">
+									<p>Направление</p>
+									<div class="checkbox">
+										<input class="checkbox-input" type="checkbox" name="level" id="inlineCheckbox5" value="Стрип пластика">
+										<label class="checkbox-label" for="inlineCheckbox5">Стрип пластика</label>
+									</div>
+									<div class="checkbox">
+										<input class="checkbox-input" type="checkbox" name="level" id="inlineCheckbox6" value="Приват">
+										<label class="checkbox-label" for="inlineCheckbox6">Приват</label>
+									</div>
+									<div class="checkbox">
+										<input class="checkbox-input" type="checkbox" name="level" id="inlineCheckbox7" value="Экзотик pole dance">
+										<label class="checkbox-label" for="inlineCheckbox7">Экзотик pole dance</label>
+									</div>
+								</div>
+							</div>
+						</li>
+						</li>
+						<li class="mobile-nav__item"><a href="certification.html" class="mobile-nav__link">Аттестация  педагогов </br>по экзоту</a></li>
+						<li class="mobile-nav__item"><a href="energy.html" class="mobile-nav__link">Женская энергия</a></li>
+					</ul>
+					<div class="mobile-nav-footer-sidebar">
+						<div class="lang-switch">
+							<a href="main.html">Рус</a>
+							<a href="main.html">Eng</a>
+						</div>
+						<a class="phone" href="tel:+74951234567">+7 (495) 123-45-67</a>
+						<div class="soc-links">
+							<ul>
+								<li>
+									<a href=""></a>
+								</li>
+								<li>
+									<a href=""></a>
+								</li>
+								<li>
+									<a href=""></a>
+								</li>
+								<li>
+									<a href=""></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 				<div class="menu-wrap">
 					<div class="menu-sidebar">
 						<ul class="menu-catalog">
@@ -464,5 +543,6 @@
 			</div>
 		</div>
 	</div>
+	<script src="../js/main1.js"></script>
 </body>
 </html>
