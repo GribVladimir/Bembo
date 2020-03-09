@@ -1298,7 +1298,8 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
     margin-right: 100px;
 	}
 	.login-form {
-		padding-right: 150px;
+			padding-left: 50px;
+			padding-right: 70px;
 	}
 }
 @media (max-width: 620px) {
@@ -1325,6 +1326,9 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 		border-top: 1px solid rgba(40, 40, 40, 0.5);
 		border-left: none;
 		padding-left: 0;
+	}
+	.btn-login {
+		margin-top: 35px;
 	}
 	.logo img {
 		max-width: 50px;
@@ -1378,11 +1382,6 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 		padding-left: 50%;
 	}
 }
-@media (max-width: 330px) {
-	.logo-mobi {
-		padding-left: 110px;
-	}
-}
 @media (max-width: 414px) {
 	.logo-mobi {
 		padding-left: 175px;
@@ -1391,13 +1390,24 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 		padding-left: 35%;
 	}
 	.login-block {
+		width: 100vh;
 		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.login-block h3 {
+		margin: 0;
 	}
 	.login-form {
-		padding: 50px;
+		padding-left: 50px;
+		padding-right: 50px;
+		padding-top: 20px;
+		padding-bottom: 50px;
 	}
 	.registration-form {
-		padding: 50px;
+		padding-left: 50px;
+		padding-right: 50px;
+		padding-top: 50px;
+		padding-bottom: 0;
 	}
 	.change-pas-form {
     padding: 50px;
@@ -1449,5 +1459,30 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 	}
 	.yeslogo {
 		padding-left: 40%;
+	}
+}
+@media (max-width: 330px) {
+	.logo-mobi {
+		padding-left: 110px;
+	}
+	.big-logo {
+		margin-bottom: 40px;
+	}
+	.login-block {
+		margin: 0;
+	}
+	.login-form {
+		width: 250px;
+		padding: 0;
+		margin-left: 25px;
+	}
+	.registration-form {
+		width: 250px;
+		padding: 0;
+		margin-left: 25px;
+	}
+	.btn-login {
+		margin-top: 25px;
+		margin-bottom: 10px;
 	}
 }
