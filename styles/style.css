@@ -595,13 +595,10 @@ a {
 	justify-content: flex-start;
 	margin: 0 0 60px;
 }
-.catalog-gallery a {
+.catalog-gallery img {
 	max-width: 31%;
-	margin-right: 2%;
-}
-.catalog-gallery a img {
-	max-width: 100%;
 	width: 100%;
+	margin-right: 2%;
 }
 .catalog-video img {
     width: 100%;
@@ -1219,8 +1216,8 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 }
 .mobile-nav-footer-sidebar {
 	position: absolute;
-  bottom: 50px;
-  left: 65px;
+  bottom: 30px;
+  left: 50px;
   width: 100%;
 }
 .mobile-nav-footer-sidebar a {
@@ -1240,11 +1237,16 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 	margin: 0;
 	padding: 0;
 }
-
 .mobile-nav__item {
 	margin-bottom: 30px;
 }
-
+.sidebar-checkbox {
+	margin-bottom: 5px;
+}
+.sidebar-checkbox-footer {
+	bottom: 25px;
+	left: 50px;
+}
 .mobile-nav__link {
 	text-decoration: none;
 	font-family: 'Cormorant';
@@ -1401,19 +1403,20 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 		padding-left: 50px;
 		padding-right: 50px;
 		padding-top: 20px;
-		padding-bottom: 50px;
+		padding-bottom: 20px;
 	}
 	.registration-form {
 		padding-left: 50px;
 		padding-right: 50px;
-		padding-top: 50px;
+		padding-top: 20px;
 		padding-bottom: 0;
 	}
 	.change-pas-form {
     padding: 50px;
 	}
-	.catalog-gallery a {
-    max-width: 100%;
+	.catalog-gallery img {
+		max-width: 100%;
+		margin-bottom: 2%;
 	}
 	.catalog-gallery {
     flex-direction: column;
