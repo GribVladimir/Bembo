@@ -106,7 +106,7 @@ a {
 .logo img {
     vertical-align: middle;
     border-style: none;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     max-width: 121px;
 }
 .mobile-logo img {
@@ -911,6 +911,7 @@ a {
 	line-height: 120%;
 	font-feature-settings: 'pnum' on, 'lnum' on;
 	color: #090909;
+	margin: 13px;
 }
 .checkbox {
     min-height: 1.5rem;
