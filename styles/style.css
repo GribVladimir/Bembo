@@ -438,7 +438,7 @@ a {
 	align-items: center;
 	text-decoration: none;
 	background-color: transparent;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 .menu-catalog li a:before {
 	content: '';
@@ -868,6 +868,7 @@ a {
 }
 .right {
 	display: flex;
+	padding-bottom: 25px;
 }
 .right ul {
 	padding-left: 0;
@@ -901,7 +902,7 @@ a {
 /*Checbox*/
 
 .menu-filter-block {
-    margin-top: 15px;
+    margin-top: 5px;
     padding-bottom: 5px;
 }
 .menu-filter-block__item p {
@@ -912,72 +913,130 @@ a {
 	line-height: 120%;
 	font-feature-settings: 'pnum' on, 'lnum' on;
 	color: #090909;
-	margin: 13px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 .checkbox {
     min-height: 1.5rem;
-		padding-left: 1rem;
-		margin-bottom: 5px;
-
+	margin-bottom: 4px;
+}
+.menu-catalog li .checkbox-top {
+	margin-bottom: 5px;
+}
+.menu-catalog li .my-lesson {
+	margin-top: 10px;
+    margin-bottom: 10px;
+}
+.menu-catalog li .login {
+    margin-bottom: 40px;
 }
 .checkbox-label {
 	font-family: 'Gill Sans';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 120%;
-  letter-spacing: 0.03em;
-  font-feature-settings: 'pnum' on, 'lnum' on;
-	color: #282828;
-	
+  	font-style: normal;
+  	font-weight: 300;
+  	font-size: 16px;
+  	line-height: 120%;
+  	letter-spacing: 0.03em;
+  	font-feature-settings: 'pnum' on, 'lnum' on;
+	color: #282828;	
 }
-.checkbox-label:focus {
-	outline: 0;
-	box-shadow: 0; 
-}
-.checkbox-label::before {
-	position: absolute;
-	top: auto;
-	left: -1rem !important;
-	display: block;
-	width: 10px;
-	height: 10px;
-	pointer-events: none;
-	content: "";
-	background-color: transparent;
-	border: 1px solid rgba(40, 40, 40, 0.5);
-	border-radius: 0;
-	transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; 
-}
-.checkbox-label::after {
-	position: absolute;
-	top: auto;
-	left: -1rem !important;
-	display: block;
-	width: 10px;
-	height: 10px;
-	content: "";
-	background: no-repeat 50%/50% 50%; 
+ .menu-catalog label {
+	font-family: 'Gill Sans';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 120%;
+	letter-spacing: 0.03em;
+	font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #282828;	
+ }
+ input[type="checkbox"]:checked, 
+input[type="checkbox"]:not(:checked), 
+input[type="radio"]:checked, 
+input[type="radio"]:not(:checked) 
+{
+    position: absolute;
+    left: -9999px;
 }
 
-.checkbox-input:checked ~ .checkbox-label::after {
-background-image: url(../img/Rectangle\ 20.png) !important; 
+input[type="checkbox"]:checked + label, 
+input[type="checkbox"]:not(:checked) + label, 
+input[type="radio"]:checked + label, 
+input[type="radio"]:not(:checked) + label {
+    display: inline-block;
+    position: relative;
+	padding-left: 28px;
+	padding-top: 2px;
+    line-height: 20px;
+    cursor: pointer;
 }
 
-.checkbox-input:checked ~ .checkbox-label::before {
-color: #fff;
-border-color: rgba(40, 40, 40, 0.5) !important;
-background-color: transparent !important; 
+input[type="checkbox"]:checked + label:before, 
+input[type="checkbox"]:not(:checked) + label:before,
+input[type="radio"]:checked + label:before, 
+input[type="radio"]:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 7px;
+    width: 10px;
+    height: 10px;
+	opacity: 0.5;
+	border: 1px solid #282828;
 }
 
-.checkbox-input:checked ~ .checkbox-label::after {
-content: "" !important;
-top: auto !important;
-left: -13px !important;
-width: 4px !important;
-height: 4px !important;
-border-color: transparent !important; 
+input[type="checkbox"]:checked + label:before, 
+input[type="checkbox"]:not(:checked) + label:before {
+    border-radius: 2px;
 }
+
+input[type="radio"]:checked + label:before, 
+input[type="radio"]:not(:checked) + label:before {
+    border-radius: 100%;
+}
+
+input[type="checkbox"]:checked + label:after, 
+input[type="checkbox"]:not(:checked) + label:after, 
+input[type="radio"]:checked + label:after, 
+input[type="radio"]:not(:checked) + label:after {
+    content: "";
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+input[type="checkbox"]:checked + label:after, 
+input[type="checkbox"]:not(:checked) + label:after {
+    left: 7px;
+    top: 10px;
+    width: 4px;
+    height: 4px;
+    border-radius: 1px;
+    background-image: url(../img/Rectangle\ 20.png);
+}
+
+input[type="radio"]:checked + label:after, 
+input[type="radio"]:not(:checked) + label:after {
+    left: 5px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #e145a3;
+}
+
+input[type="checkbox"]:not(:checked) + label:after, 
+input[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+}
+
+input[type="checkbox"]:checked + label:after, 
+input[type="radio"]:checked + label:after {
+    opacity: 1;
+}
+
 /*Pagination*/
 
 .pagination {
@@ -1081,6 +1140,9 @@ border-color: transparent !important;
 	color: #282828;
 	padding-left: 5px;
 	margin-bottom: 10px;
+}
+.menu li a.mylesson-botton {
+	margin-top: 40px;
 }
 .menu li a.mylesson {
 	margin-bottom: 10px;
@@ -1375,7 +1437,35 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 	padding: 0;
 }
 .mobile-nav__item {
-	margin-bottom: 30px;
+	margin-bottom: 20px;
+}
+.mobile-nav__list li.my-lesson {
+    margin-bottom: 10px;
+}
+.mobile-nav__list li.mylesson-link {
+	margin-bottom: 5px;
+	font-family: Gill Sans;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 120%;
+	letter-spacing: 0.03em;
+	font-feature-settings: 'pnum' on, 'lnum' on;
+	color: #282828;
+	margin-left: 5px;
+}
+.mobile-nav__list li.mylesson-link a {
+	font-family: Gill Sans;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 120%;
+	letter-spacing: 0.03em;
+	font-feature-settings: 'pnum' on, 'lnum' on;
+	color: #282828;
+}
+.mobile-nav__list li.mylesson-botton {
+	margin-top: 25px;
 }
 .sidebar-checkbox {
 	margin-bottom: 20px;
@@ -1420,6 +1510,43 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 		display: none;
 	}
 }
+@media (max-width: 2600px) and (min-width: 1700px) {
+	.menu-catalog li a {
+		letter-spacing: 0.02em;
+		font-feature-settings: 'pnum' on, 'lnum' on;
+		margin: 0 0 32px;
+		}
+		.menu-catalog li .checkbox-top {
+			margin-bottom: 16px;
+		}
+		.menu-filter-block__item {
+			margin-bottom: 16px;
+		}
+		.menu-catalog li .login {
+		letter-spacing: 0.02em;
+		font-feature-settings: 'pnum' on, 'lnum' on;
+		margin: 0 0 64px;
+		}
+		.menu-filter-block {
+			margin-top: 15px;
+			padding-bottom: 5px;
+		}
+		.logo img {
+			vertical-align: middle;
+			border-style: none;
+			margin-bottom: 45px;
+			max-width: 121px;
+		}
+		.footer-sidebar__catalog {
+		position: absolute;
+		bottom: 25px;
+		left: 65px;
+		}
+		.menu-filter-block {
+		margin-top: 0px;
+		padding-bottom: 15px;
+		}
+	}
 @media (max-width: 2600px) and (min-width: 1100px) {
 	.yeslogo {
 		display: none;
@@ -1429,25 +1556,6 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 	}
 	.mini-404 {
 		display: none;
-	}
-	.menu-catalog li a {
-    letter-spacing: 0.02em;
-    font-feature-settings: 'pnum' on, 'lnum' on;
-    margin: 0 0 25px;
-	}
-	.menu-catalog li .login {
-    letter-spacing: 0.02em;
-    font-feature-settings: 'pnum' on, 'lnum' on;
-    margin: 0 0 64px;
-	}
-	.footer-sidebar__catalog {
-    position: absolute;
-    bottom: 25px;
-    left: 65px;
-	}
-	.menu-filter-block {
-    margin-top: 0px;
-    padding-bottom: 15px;
 	}
 }
 /* Условие для экранов с шириной от 0 до 1200px */
