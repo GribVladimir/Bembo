@@ -106,11 +106,12 @@ a {
 .logo img {
     vertical-align: middle;
     border-style: none;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     max-width: 121px;
 }
 .mobile-logo img {
 	margin-left: 40%;
+	margin-bottom: 10px;
 }
 .big-logo {
 	margin-bottom: 95px;
@@ -915,8 +916,9 @@ a {
 }
 .checkbox {
     min-height: 1.5rem;
-		padding-left: 1rem !important;
+		padding-left: 1rem;
 		margin-bottom: 5px;
+
 }
 .checkbox-label {
 	font-family: 'Gill Sans';
@@ -1060,6 +1062,14 @@ border-color: transparent !important;
 	padding: 10px 0 25px;
 	width: 100%;
 }
+.catalog-header__lesson p {
+	font-family: Gill Sans;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 22px;
+	line-height: 25px;
+	color: #090909;
+}
 .menu li a.mylesson-link {
 	font-family: Gill Sans;
 	font-style: normal;
@@ -1074,6 +1084,9 @@ border-color: transparent !important;
 }
 .menu li a.mylesson {
 	margin-bottom: 10px;
+}
+.menu li a.botton-link {
+	margin-bottom: 30px;
 }
 .catalog-nav {
 	display: flex;
@@ -1093,6 +1106,7 @@ border-color: transparent !important;
 	display: flex;
 	align-items: center;
 	color: #282828;
+	opacity: 0.4;
 	margin-bottom: 5px;
 }
 .nav-footer {
@@ -1100,6 +1114,15 @@ border-color: transparent !important;
   align-items: center;
   justify-content: space-between;
   width: 100%;
+}
+.catalog-nav a.activ-link {
+	opacity: 1;
+}
+.main-img .girl-notlessons {
+	max-height: calc(100% - 100px);
+	max-width: calc(100% - 100px);
+	right: 0px;
+	bottom: 50px;
 }
 
 /*final-certification */
@@ -1126,477 +1149,21 @@ border-color: transparent !important;
 	position: relative;
 	width: calc(100% + 100px) !important;
 	height: calc(100% + 100px) !important;
-	margin-top: -50px;
 	margin-left: -50px;
 	overflow: hidden;
 }
 .final-img .final-girl {
 	max-height: calc(100% - 100px) !important;
 	max-width: calc(100% - 100px) !important;
-	right: 20px;
-	bottom: 30px;
+	right: 5px;
+	bottom: 5px;
 	position: absolute;
 	vertical-align: middle;
 	border-style: none;
 }
-
-/* Условие для экранов с шириной от 0 до 1200px */
-@media (max-width: 1200px) {
-	.menu-wrap {
-		display: none;
-	}
-	.footer-sidebar {
-		display: none;
-	}
-	.footer-sidebar__catalog {
-		display: none;
-	}
-	.logo-block {
-		margin-left: 150%;
-	}
-	.notlogo {
-		display: none;
-	}
-}
-
-/* --------------- Mobile navigation button ----------- */
-
-.menu-icon {
-	z-index: 200;
-	position: relative;
-	display: none;
-	width: 30px;
-	height: 30px;
-	cursor: pointer;
-	right: 0;
-}
-
-/* Условие для экранов с шириной от 0 до 1200px */
-@media (max-width: 1100px) {
-	.menu-icon {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			float: right;
-			margin-left: auto;
-			order: 2;
-			margin: 15px;
-	}
-	.sidebar {
-		position: relative;
-		z-index: 1;
-	}
-	.catalog-block {
-		width: 100%;
-		position: absolute;
-		z-index: 3;
-	}
-	.catalog-video__text {
-    width: 100%;
-    margin: 0;
-}
-	.catalog-products__product {
-    flex-direction: column;
-		height: 100%;
-	}
-	.catalog-products__product-text {
-		width: 100%;
-	}
-	.catalog-products__product-info {
-		width: 100%;
-	}
-	.catalog-products__product-img {
-		width: 100%;
-	}
-	.catalog-header {
-    flex-direction: column;
-	}
-	.catalog-header__left {
-		width: 100%;
-		text-align: center;
-	}
-	.catalog-header__right {
-		width: 100%;
-	}
-	.catalog-info {
-    padding: 0 ; 
-  	margin: 0 ; 
-	}
-	.registration-form {
-    padding-left: 60px;
-    padding-right: 60px;
-	}
-	.error-block {
-    height: max-content;
-	}
-	.main-img {
-    position: absolute;
-		overflow: hidden;
-		z-index: 15;
-		margin: 0;
-		width: 100%;
-}	
-	.girl {
-		height: 100%;
-		width: 100%;
-		object-fit: cover;
-	}
-	.main-img .girl {
-    max-height: calc(100% - 100px);
-    max-width: 100%;
-    right: auto;
-    position: absolute;
-	}
-	.login-block {
-    width: 100%;
-    margin-left: 0;
-    padding: 150px 0 50px;
-    margin-right: 10%;
-    display: flex;
-    justify-content: center;
-		align-items: flex-start;
-		position: absolute;
-		z-index: 15;
-	}
-	.mobi-main {
-		position: absolute;
-		height: 100%;
-		width: 100%;
-		z-index: 30;
-	}
-	.girl-mini {
-		position: absolute;
-		width: 355.69px;
-		height: 400px;
-		left: 340px;
-		top: 320px;
-	}
-	.shadow {
-		position: absolute;
-		width: 355.69px;
-		height: 400px;
-		left: 340px;
-		top: 320px;
-	}
-	.menu-sidebar {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		text-align: center;
-		position: relative;
-		padding-top: 25px;
-	}
-	.mobi-main-top {
-		padding-left: 70px;
-	}
-	.mobi-main-boton {
-		padding-left: 20px;
-	}
-}
-
-.menu-icon-line {
-position: relative;
-width: 30px;
-height: 2px;
-background-color: #090909;
-}
-
-.menu-icon-line::before {
-position: absolute;
-left: 0;
-top: -10px;
-content: '';
-width: 30px;
-height: 2px;
-background-color: #090909;
-transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
-}
-
-.menu-icon-line::after {
-position: absolute;
-left: 0;
-top: 10px;
-content: '';
-width: 30px;
-height: 2px;
-background-color: #090909;
-transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
-}
-
-.menu-icon.menu-icon-active .menu-icon-line {
-background-color: transparent;
-}
-
-.menu-icon.menu-icon-active .menu-icon-line::before {
-transform: rotate(45deg);
-top: 0;
-transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
-}
-
-.menu-icon.menu-icon-active .menu-icon-line::after {
-transform: rotate(-45deg);
-top: 0;
-transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
-}
-
-
-/* ----------------- Мобильная навигация ----------------- */
-
-.mobile-nav {
-	z-index: 100;
-	display: block;
-	position: absolute;
-	left: -350px;
-	top: 0;
-	height: 100%;
-	width: 350px;
-	padding: 50px;
-	background: url(../img/bg.jpg) no-repeat left top;
-  background-size: cover;
-	transition: transform 0.4s ease-in;
-}
-
-/* Условие для экранов с шириной от 0 до 1200px */
-@media (max-width: 768px) {
-	.mobile-nav {
-			width: 414px;
-			left: -414px;
-	}
-}
-.mobile-nav-footer-sidebar {
-	position: absolute;
-  bottom: 30px;
-  left: 50px;
-  width: 100%;
-}
-.mobile-nav-footer-sidebar a {
-	font-family: Cormorant;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 18px;
-	line-height: 120%;
-	font-feature-settings: 'pnum' on, 'lnum' on;
-	color: #090909;
-}
-.mobile-nav--active {
-	transform: translateX(100%);
-}
-.mobile-nav__list {
-	list-style-type: none;
+.final-footer {
 	margin: 0;
 	padding: 0;
-}
-.mobile-nav__item {
-	margin-bottom: 30px;
-}
-.sidebar-checkbox {
-	margin-bottom: 5px;
-}
-.sidebar-checkbox-footer {
-	bottom: 25px;
-	left: 50px;
-}
-.mobile-nav__link {
-	text-decoration: none;
-	font-family: 'Cormorant';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 120%;
-  color: #090909;
-}
-.mobile-nav__item a.mylesson-link {
-	font-family: Gill Sans;
-	font-style: normal;
-	font-weight: 300;
-	font-size: 16px;
-	line-height: 120%;
-	letter-spacing: 0.03em;
-	font-feature-settings: 'pnum' on, 'lnum' on;
-	color: #282828;
-	padding-left: 5px;
-	margin-bottom: 10px
-	}
-.logo-mobi {
-		margin: 15px;
-		margin-bottom: 0;
-    padding-left: 150px;
-}
-.yeslogo {
-		margin: 15px;
-		margin-bottom: 0;
-    padding-left: 150px;
-}
-@media (max-width: 920px) {
-	.logo-block {
-		margin-left: 120%;
-	}
-	.catalog-title-text h3 {
-    font-family: Cormorant;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 18px;
-		line-height: 120%;
-		text-align: center;
-		font-feature-settings: 'pnum' on, 'lnum' on;
-		color: #090909;
-	}
-	.main-catalog span {
-		font-family: Cormorant;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 35px;
-		line-height: 120%;
-		font-feature-settings: 'pnum' on, 'lnum' on;
-		color: #090909;
-	}
-}
-@media (max-width: 770px) {
-	.logo-block {
-		margin-left: 100%;
-	}
-	.main-catalog h2 {
-    font-size: 50px;
-    line-height: 50px;
-	}
-	.pagination {
-		display: flex;
-		justify-content: center;
-		align-items: baseline;
-    padding-top: 0;
-	}
-	.form-items {
-    margin-bottom: 10px;
-}
-	.registration-form {
-    margin-right: 100px;
-	}
-	.login-form {
-			padding-left: 50px;
-			padding-right: 70px;
-	}
-	.catalog-header__left {
-    text-align: center;
-	}
-	.catalog-header__right {
-		flex-direction: column;
-	}
-	.catalog-header__right span {
-		padding-bottom: 20px;
-	}
-	.catalog-products__product-info__price {
-		font-family: Gill Sans;
-		font-style: normal;
-		font-weight: 300;
-		font-size: 16px;
-		line-height: 120%;
-		letter-spacing: 0.03em;
-		font-feature-settings: 'pnum' on, 'lnum' on;
-		color: #282828;
-	}
-
-	.catalog-products__product-info__meta span{
-		font-family: Gill Sans;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 14px;
-		line-height: 120%;
-		letter-spacing: 0.03em;
-		font-feature-settings: 'pnum' on, 'lnum' on;
-		color: #282828;
-	}
-	.catalog-products {
-    margin-bottom: 0;
-}
-	.buttons-langs {
-		flex-direction: column;
-		width: auto;
-	}
-	.buttons-langs a {
-    margin-bottom: 10px;
-		margin-top: 10px;
-		margin-right: 20px;
-	}
-	.catalog-products__product-text {
-		padding: 10px;
-	}
-	.girl-mini {
-		width: 355.69px;
-		height: 400px;
-		left: 220px;
-		top: 320px;
-	}
-	.shadow {
-		width: 355.69px;
-		height: 400px;
-		left: 220px;
-		top: 320px;
-	}
-}
-@media (max-width: 620px) {
-	.logo-block {
-		margin-left: 60%;
-	}
-	.logo img {
-		max-width: 100px;
-	}
-}
-@media (max-width: 530px) {
-	.logo-block {
-		display: none;
-		z-index: 1;
-	}
-	.notlessons {
-		display: none;
-	}
-	.login-block {
-		flex-direction: column;
-	}
-	.registration-form {
-		padding-right: 150px;
-		border-top: 1px solid rgba(40, 40, 40, 0.5);
-		border-left: none;
-		padding-left: 0;
-	}
-	.btn-login {
-		margin-top: 35px;
-	}
-	.logo img {
-		max-width: 50px;
-	}
-	.main-catalog h2 {
-		font-size: 24px;
-		line-height: 120%;
-	}
-	.main-catalog span {
-		font-size: 24px;
-		line-height: 120%;
-		margin-right: 10px;
-		margin-bottom: 20px;
-	}
-	.catalog-title {
-		justify-content: center;
-	}
-	.catalog-header__right {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-	.catalog-block {
-		padding: 10px;
-		margin: 0;
-		top: 0;
-	}
-	.menu-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    float: right;
-    margin-left: auto;
-    order: 2;
-    margin: 15px;
-	}
 }
 /* Базовые стили слоя, затемнения и модального окна */
 .overlay {
@@ -1712,6 +1279,142 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 		width: 560px;
 		height: 315px;
 	}
+	/* --------------- Mobile navigation button ----------- */
+
+.menu-icon {
+	z-index: 200;
+	position: relative;
+	display: none;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	right: 0;
+}
+.menu-icon-line {
+position: relative;
+width: 30px;
+height: 2px;
+background-color: #090909;
+}
+
+.menu-icon-line::before {
+position: absolute;
+left: 0;
+top: -10px;
+content: '';
+width: 30px;
+height: 2px;
+background-color: #090909;
+transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+}
+
+.menu-icon-line::after {
+position: absolute;
+left: 0;
+top: 10px;
+content: '';
+width: 30px;
+height: 2px;
+background-color: #090909;
+transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+}
+
+.menu-icon.menu-icon-active .menu-icon-line {
+background-color: transparent;
+}
+
+.menu-icon.menu-icon-active .menu-icon-line::before {
+transform: rotate(45deg);
+top: 0;
+transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+.menu-icon.menu-icon-active .menu-icon-line::after {
+transform: rotate(-45deg);
+top: 0;
+transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+
+/* ----------------- Мобильная навигация ----------------- */
+
+.mobile-nav {
+	z-index: 100;
+	display: block;
+	position: absolute;
+	left: -350px;
+	top: 0;
+	height: 100%;
+	width: 350px;
+	padding: 15px 50px 50px 50px;
+	background: url(../img/bg.jpg) no-repeat left top;
+  background-size: cover;
+	transition: transform 0.4s ease-in;
+}
+.mobile-nav-footer-sidebar {
+	position: absolute;
+  bottom: 30px;
+  left: 50px;
+  width: 100%;
+}
+.mobile-nav-footer-sidebar a {
+	font-family: Cormorant;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 120%;
+	font-feature-settings: 'pnum' on, 'lnum' on;
+	color: #090909;
+}
+.mobile-nav--active {
+	transform: translateX(100%);
+}
+.mobile-nav__list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.mobile-nav__item {
+	margin-bottom: 30px;
+}
+.sidebar-checkbox {
+	margin-bottom: 20px;
+}
+.sidebar-checkbox-footer {
+	bottom: 25px;
+	left: 50px;
+}
+.mobile-nav__link {
+	text-decoration: none;
+	font-family: 'Cormorant';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 120%;
+  color: #090909;
+}
+.mobile-nav__item a.mylesson-link {
+	font-family: Gill Sans;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 120%;
+	letter-spacing: 0.03em;
+	font-feature-settings: 'pnum' on, 'lnum' on;
+	color: #282828;
+	padding-left: 5px;
+	margin-bottom: 10px
+	}
+.logo-mobi {
+		margin: 15px;
+		margin-bottom: 0;
+    padding-left: 150px;
+}
+.yeslogo {
+		margin: 15px;
+		margin-bottom: 0;
+    padding-left: 150px;
+}
 @media (max-width: 2600px) and (min-width: 530px) {
 	.logo-mobi {
 		display: none;
@@ -1724,7 +1427,532 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 	.mobi-main {
 		display: none;
 	}
+	.mini-404 {
+		display: none;
+	}
+	.menu-catalog li a {
+    letter-spacing: 0.02em;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    margin: 0 0 25px;
+	}
+	.menu-catalog li .login {
+    letter-spacing: 0.02em;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    margin: 0 0 64px;
+	}
+	.footer-sidebar__catalog {
+    position: absolute;
+    bottom: 25px;
+    left: 65px;
+	}
+	.menu-filter-block {
+    margin-top: 0px;
+    padding-bottom: 15px;
+	}
 }
+/* Условие для экранов с шириной от 0 до 1200px */
+@media (max-width: 1200px) {
+	.menu-wrap {
+		display: none;
+	}
+	.footer-sidebar {
+		display: none;
+	}
+	.footer-sidebar__catalog {
+		display: none;
+	}
+	.logo-block {
+		margin-left: 150%;
+	}
+	.notlogo {
+		display: none;
+	}
+}
+
+/* Условие для экранов с шириной от 0 до 1100px */
+@media (max-width: 1100px) {
+	.menu-icon {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			float: right;
+			margin-left: auto;
+			order: 2;
+			margin: 15px;
+	}
+	.sidebar {
+		position: relative;
+		z-index: 1;
+	}
+	.catalog-block {
+		width: 100%;
+		position: absolute;
+		z-index: 3;
+	}
+	.catalog-video__text {
+    width: 100%;
+    margin: 0;
+}
+	.catalog-products__product {
+    flex-direction: column;
+		height: 100%;
+	}
+	.catalog-products__product-text {
+		width: 100%;
+	}
+	.catalog-products__product-info {
+		width: 100%;
+	}
+	.catalog-products__product-img {
+		width: 100%;
+	}
+	.catalog-header {
+    flex-direction: column;
+	}
+	.catalog-header__left {
+		width: 100%;
+		text-align: center;
+	}
+	.catalog-header__right {
+		width: 100%;
+	}
+	.catalog-info {
+    padding: 0 ; 
+  	margin: 0 ; 
+	}
+	.registration-form {
+    padding-left: 60px;
+    padding-right: 60px;
+	}
+	.error-block {
+    height: max-content;
+	}
+	.main-img {
+    position: absolute;
+		overflow: hidden;
+		z-index: 15;
+		margin: 0;
+		width: 100%;
+}	
+	.girl {
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
+	.main-img .girl {
+    max-height: calc(100% - 100px);
+    max-width: 100%;
+    right: auto;
+    position: absolute;
+	}
+	.login-block {
+    width: 100%;
+    margin-left: 0;
+    padding: 150px 0 50px;
+    margin-right: 10%;
+    display: flex;
+    justify-content: center;
+		align-items: flex-start;
+		position: absolute;
+		z-index: 15;
+	}
+	.mobi-main {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		z-index: 30;
+	}
+	.girl-mini {
+		position: absolute;
+		width: 355.69px;
+		height: 400px;
+		left: 340px;
+		top: 320px;
+	}
+	.mini-404 {
+		position: absolute;
+		width: 355.69px;
+		height: 400px;
+		left: 340px;
+		top: 320px;
+	}
+	.shadow {
+		position: absolute;
+		width: 355.69px;
+		height: 400px;
+		left: 340px;
+		top: 320px;
+	}
+	.menu-sidebar {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		position: relative;
+		padding-top: 25px;
+	}
+	.mobi-main-top {
+		padding-left: 70px;
+	}
+	.mobi-main-boton {
+		padding-left: 20px;
+	}
+}
+
+/* Условие для экранов с шириной от 0 до 1200px */
+@media (max-width: 768px) {
+	.mobile-nav {
+			width: 414px;
+			left: -414px;
+	}
+}
+
+/* Условие для экранов с шириной от 0 до 920px */
+@media (max-width: 920px) {
+	.logo-block {
+		margin-left: 120%;
+	}
+	.catalog-title-text h3 {
+    font-family: Cormorant;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 120%;
+		text-align: center;
+		font-feature-settings: 'pnum' on, 'lnum' on;
+		color: #090909;
+	}
+	.main-catalog span {
+		font-family: Cormorant;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 35px;
+		line-height: 120%;
+		font-feature-settings: 'pnum' on, 'lnum' on;
+		color: #090909;
+	}
+}
+
+/* Условие для экранов с шириной от 0 до 770px */
+@media (max-width: 770px) {
+	.logo-block {
+		margin-left: 100%;
+	}
+	.main-catalog h2 {
+    font-size: 50px;
+    line-height: 50px;
+	}
+	.pagination {
+		display: flex;
+		justify-content: center;
+		align-items: baseline;
+    padding-top: 0;
+	}
+	.form-items {
+    margin-bottom: 10px;
+}
+	.registration-form {
+    margin-right: 100px;
+	}
+	.login-form {
+			padding-left: 50px;
+			padding-right: 70px;
+	}
+	.catalog-header__left {
+    text-align: center;
+	}
+	.catalog-header__right {
+		flex-direction: column;
+	}
+	.catalog-header__right span {
+		padding-bottom: 20px;
+	}
+	.catalog-products__product-info__price span{
+		font-family: Gill Sans;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 120%;
+		letter-spacing: 0.03em;
+		font-feature-settings: 'pnum' on, 'lnum' on;
+		color: #282828;
+	}
+
+	.catalog-products__product-info__meta span{
+		font-family: Gill Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 120%;
+		letter-spacing: 0.03em;
+		font-feature-settings: 'pnum' on, 'lnum' on;
+		color: #282828;
+	}
+	.catalog-products {
+    margin-bottom: 0;
+}
+	.buttons-langs {
+		flex-direction: column;
+		width: auto;
+	}
+	.buttons-langs a {
+    margin-bottom: 10px;
+		margin-top: 10px;
+		margin-right: 20px;
+	}
+	.catalog-products__product-text {
+		padding: 10px;
+	}
+	.mini-404 {
+		width: 355.69px;
+		height: 400px;
+		left: 220px;
+		top: 320px;
+	}
+	.girl-mini {
+		width: 355.69px;
+		height: 400px;
+		left: 220px;
+		top: 320px;
+	}
+	.shadow {
+		width: 355.69px;
+		height: 400px;
+		left: 220px;
+		top: 320px;
+	}
+	.centr-btb {
+		margin-left: 20%;
+	}
+	.nav-footer {
+		flex-direction: column;
+	}
+	.center-btn {
+		margin-top: 15px;
+	}
+	.not-lessons-block {
+    position: absolute;
+		top: 0;
+		left: 180px;
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    z-index: 30;
+	}
+	.error-block {
+		position: absolute;
+		top: 0;
+		left: 180px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    z-index: 30;
+	}
+}
+
+/* Условие для экранов с шириной от 0 до 620px */
+@media (max-width: 620px) {
+	.logo-block {
+		margin-left: 60%;
+	}
+	.logo img {
+		max-width: 100px;
+	}
+}
+
+/* Условие для экранов с шириной от 0 до 530px */
+@media (max-width: 530px) {
+	.logo-block {
+		display: none;
+		z-index: 1;
+	}
+	.notlessons {
+		display: none;
+	}
+	.login-block {
+		flex-direction: column;
+		padding: 0;
+	}
+	.registration-form {
+		padding-right: 150px;
+		border-top: 1px solid rgba(40, 40, 40, 0.5);
+		border-left: none;
+		padding-left: 50px;
+    padding-right: 70px;
+		margin: 0;
+	}
+	.login-block h3 {
+    margin-bottom: 20px;
+	}
+	.btn-login {
+		margin-top: 15px;
+	}
+	.respassword {
+		padding: 150px 10px 10px 50px;
+	}
+	.logo img {
+		max-width: 50px;
+	}
+	.main-catalog h2 {
+		font-size: 24px;
+		line-height: 120%;
+	}
+	.main-catalog span {
+		font-size: 24px;
+		line-height: 120%;
+		margin-right: 10px;
+	}
+	.catalog-title {
+		justify-content: center;
+	}
+	.catalog-header__right {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+		justify-content: center;
+	}
+	.catalog-block {
+		padding: 10px;
+		margin: 0;
+		top: 0;
+	}
+	.menu-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    margin-left: auto;
+    order: 2;
+    margin: 15px;
+	}
+	.catalog-products__product-info__meta span {
+    font-family: Gill Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0.03em;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+		color: #282828;
+		margin-bottom: 0;
+	}
+	.mini-404 {
+		width: 355.69px;
+		height: 400px;
+		left: 70px;
+		top: 0;
+		top: 320px;
+	}
+	.girl-mini {
+		width: 355.69px;
+		height: 400px;
+		left: 70px;
+		top: 320px;
+	}
+	.shadow {
+		width: 355.69px;
+		height: 400px;
+		left: 70px;
+		top: 320px;
+	}
+	.catalog-header__lesson p {
+		font-family: Gill Sans;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 12px;
+		line-height: 25px;
+		color: #090909;
+	}
+	.catalog-nav a {
+    font-size: 15px;
+	}
+	.centr-btb {
+		margin-left: 5%;
+	}
+	.final-img .final-girl {
+		max-height: calc(100% - 100px) !important;
+		max-width: calc(100% - 100px) !important;
+		right: 40px;
+		bottom: 5px;
+		position: absolute;
+	}
+	.final-block h3 {
+    font-family: Cormorant;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+		color: #000000;
+		margin: 0;
+	}
+	.final-img {
+    position: relative;
+    width: calc(100% + 300px) !important;
+    height: calc(100% + 100px) !important;
+    margin-left: -50px;
+    overflow: hidden;
+	}
+	.catalog-products__product-info__title h3 {
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+		line-height: 120%;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #090909;
+    margin-bottom: 15px;
+	}
+	.catalog-products__product-info__price span {
+    font-family: Gill Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0.03em;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #282828;
+	}
+	.not-lessons-block h2 {
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+		line-height: 120%;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #090909;
+    margin-bottom: 25px;
+	}
+	.not-lessons-block p {
+    font-family: Cormorant;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+		line-height: 120%;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #090909;
+    margin-bottom: 50px;
+	}
+	.not-lessons-block {
+		align-items: center;
+    top: 50px;
+		left: 80px;
+	}
+	.error-block {
+		align-items: center;
+    top: 0;
+		left: 80px;
+	}
+	.catalog-gallery {
+    flex-direction: column;
+	}
+	.catalog-gallery img {
+    max-width: 100%;
+    margin-bottom: 2%;
+	}
+}
+
 @media (max-width: 1100px) {
 	.yeslogo {
 		padding-left: 46%;
@@ -1733,6 +1961,8 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 		display: none;
 	}
 }
+
+/* Условие для экранов с шириной от 0 до 414px */
 @media (max-width: 414px) {
 	.logo-mobi {
 		padding-left: 175px;
@@ -1759,6 +1989,9 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 		padding-right: 50px;
 		padding-top: 20px;
 		padding-bottom: 0;
+	}
+	.respassword {
+		padding: 150px 10px 10px 30px;
 	}
 	.change-pas-form {
     padding: 50px;
@@ -1831,7 +2064,15 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 		left: 40px;
 		top: 320px;
 	}
+	.mini-404 {
+		width: 355.69px;
+		height: 400px;
+		left: 40px;
+		top: 320px;
+	}
 }
+
+/* Условие для экранов с шириной от 0 до 380px */
 @media (max-width: 380px) {
 	.logo-mobi {
 		padding-left: 150px;
@@ -1842,10 +2083,23 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 	.girl-mini {
 		width: 355.69px;
 		height: 400px;
-		left: 2uuuuuuuuuu0px;
+		left: 20px;
 		top: 320px;
 	}
+	.centr-btb {
+		margin-left: 0;
+	}
+	.not-lessons-block {
+    top: 50px;
+    left: 40px;
+	}
+	.error-block {
+    top: 0;
+    left: 40px;
+	}
 }
+
+/* Условие для экранов с шириной от 0 до 330px */
 @media (max-width: 330px) {
 	.logo-mobi {
 		padding-left: 110px;
@@ -1866,9 +2120,18 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 		padding: 0;
 		margin-left: 25px;
 	}
+	.respassword {
+		padding: 100px 10px 10px 5px;
+	}
 	.btn-login {
 		margin-top: 25px;
 		margin-bottom: 10px;
+	}
+	.mini-404 {
+		width: 355.69px;
+		height: 400px;
+		left: 10px;
+		bottom: 0;
 	}
 	.girl-mini {
 		width: 355.69px;
@@ -1881,5 +2144,16 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 		height: 400px;
 		left: 10px;
 		top: 250px;
+	}
+	.btn-350 {
+		width: 280px;
+	}
+	.not-lessons-block {
+    top: 50px;
+    left: 10px;
+	}
+	.error-block {
+		top: 0;
+    left: 10px;
 	}
 }
