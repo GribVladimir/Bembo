@@ -868,7 +868,6 @@ a {
 }
 .right {
 	display: flex;
-	padding-bottom: 25px;
 }
 .right ul {
 	padding-left: 0;
@@ -1437,7 +1436,7 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 	padding: 0;
 }
 .mobile-nav__item {
-	margin-bottom: 20px;
+	margin-bottom: 25px;
 }
 .mobile-nav__list li.my-lesson {
     margin-bottom: 10px;
@@ -1452,7 +1451,6 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 	letter-spacing: 0.03em;
 	font-feature-settings: 'pnum' on, 'lnum' on;
 	color: #282828;
-	margin-left: 5px;
 }
 .mobile-nav__list li.mylesson-link a {
 	font-family: Gill Sans;
@@ -1465,7 +1463,7 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 	color: #282828;
 }
 .mobile-nav__list li.mylesson-botton {
-	margin-top: 25px;
+	margin-top: 20px;
 }
 .sidebar-checkbox {
 	margin-bottom: 20px;
@@ -1705,6 +1703,9 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 	.mobi-main-boton {
 		padding-left: 20px;
 	}
+	.yeslogo {
+		padding-left: 50%;
+	}
 }
 
 /* Условие для экранов с шириной от 0 до 1200px */
@@ -1868,6 +1869,21 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 	.logo img {
 		max-width: 100px;
 	}
+	.sidebar-checkbox {
+		margin-bottom: 5px;
+	}
+	.sidebar-checkbox .menu-filter-block {
+		padding-bottom: 0;
+	}
+	.sidebar-checkbox-footer {
+		bottom: 15px;
+		left: 50px;
+	}
+	.sidebar-checkbox-footer .lang-switch {
+		margin-bottom: 5px;
+	}
+	.sidebar-checkbox-footer a.phone {
+		margin-bottom: 5px;
 }
 
 /* Условие для экранов с шириной от 0 до 530px */
