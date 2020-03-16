@@ -1649,7 +1649,8 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
     max-height: calc(100% - 100px);
     max-width: 100%;
     right: auto;
-    position: absolute;
+	position: absolute;
+	display: none;
 	}
 	.login-block {
     width: 100%;
@@ -1658,9 +1659,9 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
     margin-right: 10%;
     display: flex;
     justify-content: center;
-		align-items: flex-start;
-		position: absolute;
-		z-index: 15;
+	align-items: flex-start;
+	position: absolute;
+	z-index: 15;
 	}
 	.mobi-main {
 		position: absolute;
@@ -2221,6 +2222,16 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
     top: 0;
     left: 40px;
 	}
+	.sidebar-checkbox {
+	margin-bottom: 3px;
+	}
+	.sidebar-checkbox-footer .lang-switch {
+	margin-bottom: 3px;
+	}
+	.sidebar-checkbox-footer {
+	bottom: 10px;
+	left: 50px;
+	}
 }
 
 /* Условие для экранов с шириной от 0 до 330px */
@@ -2279,5 +2290,9 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 	.error-block {
 		top: 0;
     left: 10px;
+	}
+	.mobile-logo img {
+	margin-left: 30%;
+	margin-bottom: 10px;
 	}
 }
