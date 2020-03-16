@@ -836,7 +836,7 @@ a {
 
 .sort-box {
 	float: right;
-  margin: 0 0 25px;
+  	margin: 0 0 25px;
 }
 .dropdown{
   position: absolute;
@@ -852,11 +852,12 @@ a {
 	padding-bottom: 7px;
 }
 .left {
-	background: none;
+	
 	padding: 0;
 }
 .left li a {
-	margin-bottom: 10px;
+	margin-top: 3px;
+	margin-bottom: 3px;
 	font-family: Gill Sans;
 	font-style: normal;
 	font-weight: normal;
@@ -895,6 +896,68 @@ a {
 }
 
 .right ul li.active .dropdown{
+  display: block;
+}
+.left-dropdown {
+	display: flex;
+}
+.left-dropdown ul {
+	padding-left: 0;
+}
+.left-dropdown a {
+	font-family: Cormorant;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 120%;
+	font-feature-settings: 'pnum' on, 'lnum' on;
+	color: #000000;
+}
+.left-dropdown img {
+	margin-left: 10px;
+}
+.left-dropdown ul li{
+	position: relative;
+}
+.left-dropdown ul li .dropdown:before{
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.left-dropdown ul li.active .dropdown{
+  display: block;
+}
+.left-dropdown-mobil {
+	display: flex;
+}
+.left-dropdown-mobil ul {
+	padding-left: 0;
+}
+.left-dropdown-mobil a {
+	font-family: Cormorant;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 120%;
+	font-feature-settings: 'pnum' on, 'lnum' on;
+	color: #000000;
+}
+.left-dropdown-mobil img {
+	margin-left: 10px;
+}
+.left-dropdown-mobil ul li{
+	position: relative;
+}
+.left-dropdown-mobil ul li .dropdown:before{
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.left-dropdown-mobil ul li.active .dropdown{
   display: block;
 }
 
@@ -1117,7 +1180,7 @@ input[type="radio"]:checked + label:after {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 10px 0 25px;
+	
 	width: 100%;
 }
 .catalog-header__lesson p {
@@ -1139,6 +1202,9 @@ input[type="radio"]:checked + label:after {
 	color: #282828;
 	padding-left: 5px;
 	margin-bottom: 10px;
+}
+.menu li a.activ-link {
+    font-weight: bold;
 }
 .menu li a.mylesson-botton {
 	margin-top: 40px;
@@ -1191,38 +1257,46 @@ input[type="radio"]:checked + label:after {
 .final-block {
 	position: absolute;
 	width: 600px;
-	height: 100%;
+	height: 80%;
 	display: flex;
 	align-items: flex-start;
 	flex-direction: column;
 	z-index: 1;
 }
+.final-block h2 {
+	margin-top: 10px;
+	margin-bottom: 25px;
+	font-size: 62px;
+}
+.final-block p {
+	margin: 0;
+}
 .final-block h3 {
 	font-family: Cormorant;
  	font-style: normal;
 	font-weight: bold;
-	font-size: 52px;
+	font-size: 48px;
 	line-height: 63px;
 	font-feature-settings: 'tnum' on, 'lnum' on;
 	color: #000000;
+	margin-bottom: 10px;
 }
 .final-img {
-	position: relative;
-	width: calc(100% + 100px) !important;
-	height: calc(100% + 100px) !important;
-	margin-left: -50px;
-	overflow: hidden;
+    width: 95%;
+    height: 80%;
+    margin-left: 80px;
+    overflow: hidden;
 }
 .final-img .final-girl {
-	max-height: calc(100% - 100px) !important;
-	max-width: calc(100% - 100px) !important;
-	right: 5px;
-	bottom: 5px;
+	max-height: calc(100%);
+	max-width: calc(100% - 400px);
+	right: 1px;
 	position: absolute;
 	vertical-align: middle;
 	border-style: none;
 }
 .final-footer {
+	position: relative;
 	margin: 0;
 	padding: 0;
 }
@@ -1462,8 +1536,21 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 	font-feature-settings: 'pnum' on, 'lnum' on;
 	color: #282828;
 }
+.mobile-nav__list li.activ-link a {
+	font-family: Gill Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 120%;
+	letter-spacing: 0.03em;
+	font-feature-settings: 'pnum' on, 'lnum' on;
+	color: #282828;
+}
 .mobile-nav__list li.mylesson-botton {
 	margin-top: 20px;
+}
+.left-dropdown-mobil {
+	padding-bottom: 15px;
 }
 .sidebar-checkbox {
 	margin-bottom: 20px;
@@ -1481,7 +1568,7 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
   line-height: 120%;
   color: #090909;
 }
-.mobile-nav__item a.mylesson-link {
+.mobile-nav__item a.mylesson-link .activ-link{
 	font-family: Gill Sans;
 	font-style: normal;
 	font-weight: 300;
@@ -1493,6 +1580,18 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 	padding-left: 5px;
 	margin-bottom: 10px
 	}
+	.mobile-nav__item a.mylesson-link .activ-link{
+		font-family: Gill Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 120%;
+		letter-spacing: 0.03em;
+		font-feature-settings: 'pnum' on, 'lnum' on;
+		color: #282828;
+		padding-left: 5px;
+		margin-bottom: 10px
+		}
 .logo-mobi {
 		margin: 15px;
 		margin-bottom: 0;
@@ -1639,7 +1738,7 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 		z-index: 15;
 		margin: 0;
 		width: 100%;
-}	
+	}	
 	.girl {
 		height: 100%;
 		width: 100%;
@@ -1706,6 +1805,30 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 	}
 	.yeslogo {
 		padding-left: 50%;
+	}
+	.not-lessons-block {
+		position: absolute;
+		top: 0;
+		left: 300px;
+	}
+	.final-block h2 {
+		margin-top: 5px;
+		margin-bottom: 25px;
+		font-size: 45px;
+	}
+	.final-img {
+		width: 95%;
+		height: 70%;
+		margin-left: 80px;
+		overflow: hidden;
+	}
+	.final-img .final-girl {
+		max-height: calc(70%);
+		max-width: calc(100% - 500px);
+		right: 1px;
+		position: absolute;
+		vertical-align: middle;
+		border-style: none;
 	}
 }
 
@@ -1841,24 +1964,32 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 		margin-top: 15px;
 	}
 	.not-lessons-block {
-    position: absolute;
+    	position: absolute;
 		top: 0;
-		left: 180px;
-    width: auto;
-    height: 100%;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    z-index: 30;
+		left: 250px;
+   	 	width: auto;
+    	height: 100%;
+    	display: flex;
+    	align-items: center;
+    	flex-direction: column;
+    	z-index: 30;
+	}
+	.not-lessons-block p {
+		font-size: 22px;
+		margin-bottom: 50px;
 	}
 	.error-block {
 		position: absolute;
 		top: 0;
 		left: 180px;
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    z-index: 30;
+    	width: auto;
+    	display: flex;
+    	flex-direction: column;
+    	z-index: 30;
+	}
+	.not-lessons-block h2 {
+		font-size: 24px;
+		margin-bottom: 25px;
 	}
 }
 
@@ -1885,8 +2016,8 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 	}
 	.sidebar-checkbox-footer a.phone {
 		margin-bottom: 5px;
+	}
 }
-
 /* Условие для экранов с шириной от 0 до 530px */
 @media (max-width: 530px) {
 	.logo-block {
@@ -1905,17 +2036,31 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 		border-top: 1px solid rgba(40, 40, 40, 0.5);
 		border-left: none;
 		padding-left: 50px;
-    padding-right: 70px;
+    	padding-right: 70px;
 		margin: 0;
 	}
 	.login-block h3 {
-    margin-bottom: 20px;
+	margin-bottom: 60px;
+	margin-left: 17%;
 	}
 	.btn-login {
 		margin-top: 15px;
 	}
 	.respassword {
-		padding: 150px 10px 10px 50px;
+		padding: 40px 10px 10px 50px;
+	}
+	.change-pas-form p {
+		width: 60%;
+		margin-left: 17%;
+		margin-bottom: 35px;
+	}
+	.form-control {
+		width: 60%;
+		margin-left: 17%;
+	}
+	.submit-group {
+		width: 60%;
+		margin-left: 17%;
 	}
 	.logo img {
 		max-width: 50px;
@@ -1933,9 +2078,9 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 		justify-content: center;
 	}
 	.catalog-header__right {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    	display: flex;
+    	flex-wrap: wrap;
+    	align-items: center;
 		justify-content: center;
 	}
 	.catalog-block {
@@ -2043,11 +2188,11 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
     font-family: 'Cormorant';
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 22px;
 		line-height: 120%;
     font-feature-settings: 'tnum' on, 'lnum' on;
     color: #090909;
-    margin-bottom: 25px;
+    margin-bottom: 95px;
 	}
 	.not-lessons-block p {
     font-family: Cormorant;
@@ -2075,6 +2220,12 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 	.catalog-gallery img {
     max-width: 100%;
     margin-bottom: 2%;
+	}
+	.menu-catalog li a {
+		margin-bottom: 8px;
+	}
+	.left-dropdown-mobil {
+		padding-bottom: 5px;
 	}
 }
 
@@ -2116,7 +2267,7 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 		padding-bottom: 0;
 	}
 	.respassword {
-		padding: 150px 10px 10px 30px;
+		padding: 40px 10px 10px 20px;
 	}
 	.change-pas-form {
     padding: 50px;
@@ -2195,6 +2346,30 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 		left: 40px;
 		top: 320px;
 	}
+	.respassword {
+		padding: 40px 10px 10px 5px;
+	}
+	.change-pas-form {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	.change-pas-form p {
+		width: 90%;
+		margin-left: 18%;
+		margin-bottom: 35px;
+	}
+	.change-pas-form h3 {
+		margin-left: 18%;
+		margin-bottom: 60px;
+	}
+	.form-control {
+		width: 100%;
+		margin-left: 18%;
+	}
+	.submit-group {
+		width: 100%;
+		margin-left: 18%;
+	}
 }
 
 /* Условие для экранов с шириной от 0 до 380px */
@@ -2231,6 +2406,38 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 	.sidebar-checkbox-footer {
 	bottom: 10px;
 	left: 50px;
+	}
+	.change-pas-form p {
+		width: 80%;
+		margin-left: 11%;
+		margin-bottom: 35px;
+	}
+	.change-pas-form h3 {
+		margin-left: 11%;
+		margin-bottom: 60px;
+		font-size: 24px;
+		line-height: 120%;
+	}
+	.form-control {
+		width: 95%;
+		margin-left: 5%;
+	}
+	.submit-group {
+		width: 95%;
+		margin-left: 5%;
+	}
+	.menu-catalog li a {
+		margin-bottom: 0px;
+	}
+	.lang-switch {
+		margin-bottom: 5px;
+	}
+	.phone {
+		margin-bottom: 10px;
+		display: block;
+	}
+	.mobile-nav__item {
+		margin-bottom: 15px;
 	}
 }
 
@@ -2309,5 +2516,37 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 	.checkbox {
 		min-height: 1.5rem;
 		margin-bottom: 0px;
+	}
+	.respassword {
+		padding: 40px 10px 10px 5px;
+	}
+	.change-pas-form {
+		padding-left: 20px;
+		padding-right: 50px;
+	}
+	.change-pas-form p {
+		width: 90%;
+		margin-left: 12%;
+		margin-bottom: 35px;
+	}
+	.change-pas-form h3 {
+		margin-left: 12%;
+	}
+	.form-control {
+		width: 100%;
+		margin-left: 0;
+	}
+	.submit-group {
+		width: 100%;
+		margin-left: 0;
+	}
+	.mobile-nav__item {
+		margin-bottom: 2px;
+	}
+	.mobile-nav-footer-sidebar {
+		position: absolute;
+		bottom: 10px;
+		left: 50px;
+		width: 100%;
 	}
 }
