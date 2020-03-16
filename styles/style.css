@@ -2295,4 +2295,19 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 	margin-left: 30%;
 	margin-bottom: 10px;
 	}
+	.menu-filter-block__item p {
+		font-family: Cormorant;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 120%;
+		font-feature-settings: 'pnum' on, 'lnum' on;
+		color: #090909;
+		margin-top: 5px;
+		margin-bottom: 0px;
+	}
+	.checkbox {
+		min-height: 1.5rem;
+		margin-bottom: 0px;
+	}
 }
