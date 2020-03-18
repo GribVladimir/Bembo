@@ -896,7 +896,7 @@ a {
   display: block;
 }
 .left {
-	width: 170px;
+	width: 175px;
 }
 .left-dropdown {
 	display: flex;
@@ -2450,7 +2450,7 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 		display: block;
 	}
 	.mobile-nav__item {
-		margin-bottom: 15px;
+		margin-bottom: 9px;
 	}
 	.mobile-nav__list li.my-lesson {
 		margin-bottom: 2px;
