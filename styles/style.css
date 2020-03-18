@@ -1555,13 +1555,13 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 	color: #282828;
 }
 .mobile-nav__list li.mylesson-botton {
-	margin-top: 40px;
+	margin-top: 32px;
 }
 .left-dropdown-mobil {
-	padding-bottom: 15px;
+	padding-bottom: 24px;
 }
 .sidebar-checkbox {
-	margin-bottom: 20px;
+	margin-bottom: 23px;
 }
 .sidebar-checkbox-footer {
 	bottom: 25px;
@@ -2010,7 +2010,7 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 		max-width: 100px;
 	}
 	.sidebar-checkbox {
-		margin-bottom: 5px;
+		margin-bottom: 24px;
 	}
 	.sidebar-checkbox .menu-filter-block {
 		padding-bottom: 0;
@@ -2233,7 +2233,7 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 		margin-bottom: 8px;
 	}
 	.left-dropdown-mobil {
-		padding-bottom: 5px;
+		padding-bottom: 24px;
 	}
 }
 
@@ -2458,10 +2458,10 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 		display: block;
 	}
 	.mobile-nav__item {
-		margin-bottom: 0px;
+		margin-bottom: 24px;
 	}
 	.mobile-nav__list li.my-lesson {
-		margin-bottom: 2px;
+		margin-bottom: 4px;
 	}
 	.menu-filter-block {
 		margin-top: 0px;
@@ -2576,7 +2576,7 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 		margin-left: 0;
 	}
 	.mobile-nav__item {
-		margin-bottom: 0px;
+		margin-bottom: 24px;
 	}
 	.mobile-nav-footer-sidebar {
 		position: absolute;
