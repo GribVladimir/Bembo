@@ -2412,7 +2412,7 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 	margin-bottom: 3px;
 	}
 	.sidebar-checkbox-footer .lang-switch {
-	margin-bottom: 3px;
+	margin-bottom: 1px;
 	}
 	.sidebar-checkbox-footer {
 	bottom: 10px;
@@ -2443,14 +2443,14 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 		margin-bottom: 0px;
 	}
 	.lang-switch {
-		margin-bottom: 5px;
+		margin-bottom: 2px;
 	}
 	.phone {
 		margin-bottom: 10px;
 		display: block;
 	}
 	.mobile-nav__item {
-		margin-bottom: 9px;
+		margin-bottom: 2px;
 	}
 	.mobile-nav__list li.my-lesson {
 		margin-bottom: 2px;
