@@ -2408,6 +2408,14 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
     top: 0;
     left: 40px;
 	}
+	.checkbox {
+		min-height: 1.5rem;
+		margin-bottom: 1px;
+	}
+	.menu-filter-block__item p {
+		margin-top: 2px;
+		margin-bottom: 2px;
+	}
 	.sidebar-checkbox {
 	margin-bottom: 3px;
 	}
@@ -2450,7 +2458,7 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 		display: block;
 	}
 	.mobile-nav__item {
-		margin-bottom: 2px;
+		margin-bottom: 0px;
 	}
 	.mobile-nav__list li.my-lesson {
 		margin-bottom: 2px;
@@ -2568,7 +2576,7 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 		margin-left: 0;
 	}
 	.mobile-nav__item {
-		margin-bottom: 2px;
+		margin-bottom: 0px;
 	}
 	.mobile-nav-footer-sidebar {
 		position: absolute;
