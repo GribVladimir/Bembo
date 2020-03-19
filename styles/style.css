@@ -1520,6 +1520,9 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 	margin-top: 5px;
 	margin-bottom: 40px;
 }
+.mobile-nav__list li.not-catalog-login {
+	margin-bottom: 90px;
+}
 .mobile-nav__list li.my-lesson {
     margin-bottom: 10px;
 }
@@ -1555,7 +1558,7 @@ transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 	color: #282828;
 }
 .mobile-nav__list li.mylesson-botton {
-	margin-top: 32px;
+	margin-top: 60px;
 }
 .left-dropdown-mobil {
 	padding-bottom: 24px;
